@@ -1,24 +1,71 @@
 body {
   margin: 0;
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(background.jpeg);
+  background-position: left;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
   display: flex;
   flex-flow: column;
+  width: 300px;
+  background-color: rgba(75, 52, 30, 0.616);
+  border: 1px solid rgb(136, 70, 0);
+  padding: 10px;
+}
+
+input {
+  display: block;
+  height: 10px;
+  width: 100px;
+  margin: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(136, 70, 0);
+  font-size: 12pt;
+  padding: 8px 15px;
 }
 
 input,
 button,
 a {
   outline: none;
+  color: rgb(202, 150, 120);
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 form .linha {
   display: flex;
-  flex-flow: row; /* column = form vertical, row = form horizontal */
+  flex-flow: column; /* column = form vertical, row = form horizontal */
+}
+
+form .linha1 {
+  text-align: center;
+  padding: 15px;
+  font-size: 17pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: #000000 1.5px 1.5px;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 16pt;
+  padding: 8px 15px;
+  background-color: rgb(22, 10, 0);
+  border: black;
+  color: rgb(255, 255, 255);
+  cursor: pointer;  
+  text-align: center;
 }
